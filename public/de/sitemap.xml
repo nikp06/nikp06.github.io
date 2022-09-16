@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>localhost/de/categories/</loc>
+    <loc>https://nikp06.github.io/de/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="localhost/categories/"
+                href="https://nikp06.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="localhost/de/categories/"
+                href="https://nikp06.github.io/de/categories/"
                 />
   </url><url>
-    <loc>localhost/de/</loc>
+    <loc>https://nikp06.github.io/de/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="localhost/"
+                href="https://nikp06.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="localhost/de/"
+                href="https://nikp06.github.io/de/"
                 />
   </url><url>
-    <loc>localhost/de/series/</loc>
+    <loc>https://nikp06.github.io/de/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="localhost/series/"
+                href="https://nikp06.github.io/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="localhost/de/series/"
+                href="https://nikp06.github.io/de/series/"
                 />
   </url><url>
-    <loc>localhost/de/tags/</loc>
+    <loc>https://nikp06.github.io/de/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="localhost/tags/"
+                href="https://nikp06.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="localhost/de/tags/"
+                href="https://nikp06.github.io/de/tags/"
                 />
   </url>
 </urlset>

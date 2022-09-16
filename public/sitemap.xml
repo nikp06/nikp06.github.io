@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>localhost/en/sitemap.xml</loc>
+    <loc>https://nikp06.github.io/en/sitemap.xml</loc>
     
       <lastmod>2022-09-14T12:56:33+02:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>localhost/de/sitemap.xml</loc>
+    <loc>https://nikp06.github.io/de/sitemap.xml</loc>
     
   </sitemap>
   

@@ -1,30 +1,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on My ML Journey</title>
-        <link>localhost/posts/</link>
+        <link>https://nikp06.github.io/posts/</link>
         <description>Recent content in Posts on My ML Journey</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Wed, 14 Sep 2022 12:56:33 +0200</lastBuildDate>
-        <atom:link href="localhost/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://nikp06.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Second Post</title>
-            <link>localhost/posts/2022/09/second-post/</link>
+            <link>https://nikp06.github.io/posts/2022/09/second-post/</link>
             <pubDate>Wed, 14 Sep 2022 12:56:33 +0200</pubDate>
             
-            <guid>localhost/posts/2022/09/second-post/</guid>
+            <guid>https://nikp06.github.io/posts/2022/09/second-post/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
         
         <item>
             <title>Writing your first Post on GitHub Pages with Jekyll</title>
-            <link>localhost/posts/2022/06/writing-your-first-post-on-github-pages-with-jekyll/</link>
+            <link>https://nikp06.github.io/posts/2022/06/writing-your-first-post-on-github-pages-with-jekyll/</link>
             <pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate>
             
-            <guid>localhost/posts/2022/06/writing-your-first-post-on-github-pages-with-jekyll/</guid>
+            <guid>https://nikp06.github.io/posts/2022/06/writing-your-first-post-on-github-pages-with-jekyll/</guid>
             <description>The goal of this article is to teach myself about blog writing with Jekyll and GitHub Pages.
 Create Markdown File Owl bet you&amp;#39;ll lose this staring contest 🦉 pic.twitter.com/eJh4f2zncC
 &amp;mdash; San Diego Zoo Wildlife Alliance (@sandiegozoo) October 26, 2021 Create this Markdown File (e.g. 2022-06-11-first-post.markdown) and add the text your writing about with adequate markdown.
@@ -73,10 +73,10 @@ then display them with a link starting with an exclamative mark like this:</p>
         
         <item>
             <title>Hello Friend</title>
-            <link>localhost/posts/2019/01/hello-friend/</link>
+            <link>https://nikp06.github.io/posts/2019/01/hello-friend/</link>
             <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
             
-            <guid>localhost/posts/2019/01/hello-friend/</guid>
+            <guid>https://nikp06.github.io/posts/2019/01/hello-friend/</guid>
             <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
 Fusce pharetra suscipit orci nec tempor.</description>
             <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. <strong>Donec quis dolor nec nunc mollis interdum vel in purus</strong>. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.</p>
