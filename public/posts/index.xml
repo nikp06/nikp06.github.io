@@ -1,0 +1,97 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on My ML Journey</title>
+        <link>localhost/posts/</link>
+        <description>Recent content in Posts on My ML Journey</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Wed, 14 Sep 2022 12:56:33 +0200</lastBuildDate>
+        <atom:link href="localhost/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Second Post</title>
+            <link>localhost/posts/2022/09/second-post/</link>
+            <pubDate>Wed, 14 Sep 2022 12:56:33 +0200</pubDate>
+            
+            <guid>localhost/posts/2022/09/second-post/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Writing your first Post on GitHub Pages with Jekyll</title>
+            <link>localhost/posts/2022/06/writing-your-first-post-on-github-pages-with-jekyll/</link>
+            <pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate>
+            
+            <guid>localhost/posts/2022/06/writing-your-first-post-on-github-pages-with-jekyll/</guid>
+            <description>The goal of this article is to teach myself about blog writing with Jekyll and GitHub Pages.
+Create Markdown File Owl bet you&amp;#39;ll lose this staring contest 🦉 pic.twitter.com/eJh4f2zncC
+&amp;mdash; San Diego Zoo Wildlife Alliance (@sandiegozoo) October 26, 2021 Create this Markdown File (e.g. 2022-06-11-first-post.markdown) and add the text your writing about with adequate markdown.
+Customize Front Matter metadata The Front Matter metadata goes at the very top of your newly created markdown file.</description>
+            <content type="html"><![CDATA[<script type="application/javascript" src="https://gist.github.com/spf13/7896402.js"></script>
+
+<p>The goal of this article is to teach myself about blog writing with <em>Jekyll</em> and <em>GitHub Pages</em>.</p>
+<h2 id="create-markdown-file">Create Markdown File</h2>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Owl bet you&#39;ll lose this staring contest 🦉 <a href="https://t.co/eJh4f2zncC">pic.twitter.com/eJh4f2zncC</a></p>&mdash; San Diego Zoo Wildlife Alliance (@sandiegozoo) <a href="https://twitter.com/sandiegozoo/status/1453110110599868418?ref_src=twsrc%5Etfw">October 26, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Create this Markdown File (e.g. 2022-06-11-first-post.markdown) and add the text your writing about with adequate markdown.</p>
+<h2 id="customize-front-matter-metadata">Customize Front Matter metadata</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ZVSmPikcIP4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>The Front Matter metadata goes at the very top of your newly created markdown file. Here you specify layout, title, date and blog categories like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">layout</span>: <span style="color:#ae81ff">post</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Writing your first Post on GitHub Pages with Jekyll&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2022-06-11</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">categories</span>: <span style="color:#ae81ff">jekyll blogging</span>
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p><a href="https://simondosda.github.io/posts/2021-09-15-blog-github-pages-3-content.html">The Blog posts of simondosda</a> among others are what helped me get started with this personal website. The following are copied from his example post.</p>
+<h2 id="structure-your-posts">Structure your posts</h2>
+<p>Use level 2 (<code>##</code>) and if necessary level 3 (<code>###</code>) titles
+to structure your posts.</p>
+<h2 id="display-code-snippets">Display code snippets</h2>
+<p>You can display a block of code like the following using triple backticks.
+You can also specify the language after the first triple backticks.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello</span>(name):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;hello </span><span style="color:#e6db74">{</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>
+</span></span></code></pre></div><h2 id="add-images">Add images</h2>
+<p>Create an <code>assets</code> folder where you can put all your images,
+then display them with a link starting with an exclamative mark like this:</p>
+
+    <img src="/img/hello.jpg"  alt="Hello Friend"  class="center"  style="border-radius: 8px;"  />
+
+
+<p><code>![my inspiring image]({{ &quot;/assets/surface-hpw43cBT1lk-unsplash.jpg&quot; | relative_url }})</code>.</p>
+<p><img src="img/hello.jpg" alt="my inspiring image"></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Hello Friend</title>
+            <link>localhost/posts/2019/01/hello-friend/</link>
+            <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+            
+            <guid>localhost/posts/2019/01/hello-friend/</guid>
+            <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
+Fusce pharetra suscipit orci nec tempor.</description>
+            <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. <strong>Donec quis dolor nec nunc mollis interdum vel in purus</strong>. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.</p>
+<blockquote>
+<p>Fusce pharetra suscipit orci nec tempor. Quisque vitae sem sit amet sem mollis consequat. Sed at imperdiet lorem. Vestibulum pharetra faucibus odio, ac feugiat tellus sollicitudin at. Pellentesque varius tristique mi imperdiet dapibus. Duis orci odio, sodales lacinia venenatis sit amet, feugiat et diam.</p>
+</blockquote>
+<p>Sed a leo id risus venenatis vulputate non quis nulla. Aenean nisl quam, lacinia pulvinar orci sit amet, eleifend eleifend dui. Nulla tempor ligula leo, eu vehicula quam condimentum a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla gravida tristique nunc sed semper. Morbi nec felis odio.</p>
+<ul>
+<li>Sed efficitur, lacus ac scelerisque pellentesque, lectus risus dignissim nisl, fermentum semper lectus diam eget lacus.</li>
+<li>Nunc ornare purus enim, id eleifend mauris vestibulum volutpat.</li>
+<li>Aenean facilisis ut ipsum condimentum ultrices.</li>
+<li>Fusce sed metus vulputate, lobortis purus et, finibus purus. Suspendisse quis posuere lorem. Vivamus vulputate nec risus in pulvinar.</li>
+</ul>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>
