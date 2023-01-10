@@ -1,4 +1,4 @@
 .github/workflows/hugo.yml
 .github/workflows/gh-pages.yml
 themes/hugo-theme-stack
-themes/hugo-them-timeline
+themes/hugo-theme-timeline
