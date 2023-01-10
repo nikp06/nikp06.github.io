@@ -90,7 +90,7 @@ disableHugoGeneratorInject = false
   #
   # Enables the global language menu.
   #
-  enableGlobalLanguageMenu = true
+  enableGlobalLanguageMenu = false
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
@@ -155,7 +155,7 @@ disableHugoGeneratorInject = false
   # Social icons
   [[params.social]]
     name = "twitter"
-    url  = "https://twitter.com/"
+    url  = "https://twitter.com/killerplauze1"
 
   # [[params.social]]
   #   name = "email"
@@ -168,20 +168,20 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "github"
-    url  = "https://github.com/"
+    url  = "https://github.com/nikp06"
 
   [[params.social]]
     name = "linkedin"
-    url  = "https://www.linkedin.com/"
+    url  = "https://www.linkedin.com/in/niklas-petersen-41746416a/"
 
   [[params.social]]
     name = "youtube"
-    url  = "https://www.youtube.com/"
+    url  = "https://www.youtube.com/channel/UCV3IJuY11hfmjDomu6rEWTg"
 
 [languages]
   [languages.en]
     title = "My ML Journey"
-    subtitle = "Here I showcase and write about stuff such as .."
+    subtitle = "A blog about my coding adventures"
     keywords = "ML, DE, Python"
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
@@ -198,13 +198,13 @@ disableHugoGeneratorInject = false
     #     name       = "Posts"
     #     url        = "posts/"
 
-  [languages.de]
-    title = "Meine ML Reise"
-    subtitle = "Here I showcase and write about dinge such as .."
-    keywords = "ML, DE, Python"
-    weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
+  # [languages.de]
+  #   title = "Meine ML Reise"
+  #   subtitle = "Here I showcase and write about dinge such as .."
+  #   keywords = "ML, DE, Python"
+  #   weight    = 2
+  #   copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  #   readOtherPosts = "Read other posts"
 
     # And you can even create generic menu
     # [languages.de.menu]
@@ -227,6 +227,11 @@ disableHugoGeneratorInject = false
       identifier = "posts"
       name       = "Posts"
       url        = "posts/"
+    [[menu.main]]
+      identifier = "timeline"
+      name       = "Timeline"
+      url        = "timeline/"
+
 
 # [privacy]
 #   [privacy.disqus]
