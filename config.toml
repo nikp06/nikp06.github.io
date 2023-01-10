@@ -180,8 +180,8 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.en]
-    title = "My ML Journey"
-    subtitle = "A blog about my coding adventures"
+    title = "My Coding Blog"
+    subtitle = "A place for me to share and document my coding adventures"
     keywords = "ML, DE, Python"
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
