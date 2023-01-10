@@ -180,7 +180,7 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.en]
-    title = "My Coding Blog"
+    title = "My ML Jorney"
     subtitle = "A place for me to share and document my coding adventures"
     keywords = "ML, DE, Python"
     weight    = 1
