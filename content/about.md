@@ -4,11 +4,11 @@ date = "2023-01-10"
 author = "Niklas"
 +++
 
-# Welcome to my personal blog!
+## Welcome to my personal blog!
 
 My name is Niklas and I am a machine learning engineer and self-taught programmer. I have a masters degree in Human Technology in Sports and Medicine, but I soon found that using programming and software to solve problems in various fields of life to be even more in line with what I wanted to focus on and do in my working life.
 
-## My Interest in Programming
+### My Interest in Programming
 
 I have always been fascinated with the potential of programming and AI to solve complex problems and make our lives easier. So I began to teach myself how to code and started building personal projects driven by my curiosity. These projects include writing and training AI systems that are capable of playing games (Icy Tower, Subway Surfers).
 
@@ -16,7 +16,7 @@ Actually being able to transfer knowledge to personal ideas and projects really 
 
 The fact that I am so curious and passionate about programming to take various computer science courses, start part-time jobs that involve programming and build and document personal coding projects in my spare time, all while studying for a masters degree is what eventually helped me to land a job in machine learning, I think.
 
-## What to Expect
+### What to Expect
 Now, I am more than happy to write code for a living and I want to use this website to (more or less randomly) document what I stumble across and learn along the way.
 
 I created this blog mainly for myself as a way of documenting knowledge as I tackle various programming challenges. However, if it can help anyone else along the way, that would be even better.

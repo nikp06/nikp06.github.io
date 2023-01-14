@@ -2,3 +2,4 @@
 .github/workflows/gh-pages.yml
 themes/hugo-theme-stack
 themes/hugo-theme-timeline
+_texts
