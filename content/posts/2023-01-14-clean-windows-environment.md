@@ -1,21 +1,20 @@
 +++
-title = "Set up a clean Coding Environment on Windows"
+title = "WSL, VSCode and Venv - a Guide to a clean and reliable Coding Environment on Windows"
 date = "2023-01-14T14:55:06+01:00"
 author = "Niklas Petersen"
 authorTwitter = "killerplauze1" #do not include @
 cover = "img/2023-01-14-clean-windows-environment/cover.png"
-description = "I talk about how to create a clean conding environment on Windows using the wsl in vscode."
-tags = ["DevOps", "Python", "Linux"]
+description = "The power of Linux commands on your Windows machine - this step-by-step guide will show you how to set up a reliable and clean Linux-like coding environment on your Windows machine using Windows Subsystem for Linux (WSL), VSCode as an IDE, and Python virtual environments. No more annoying workarounds and more seamless coding on Windows. Read more to learn how to make the most out of your Windows machine."
+tags = ["DevOps", "Python", "Linux", "Productivity"]
 keywords = ["python", "windows", "wsl", "venv", "linux", "ubuntu", "vscode"]
 showFullContent = false
 readingTime = true
 hideComments = false
 +++
 
-Since working full-time on a mac, I do not want to miss out on being able to use linux commands on my personal machine.
-This is why I wanted to create the most reliable development environment that allows me to write code on my Windows machine just like I couly on any other one.
+Do you feel limited by using a Windows machine for your development work?
 
-If you are like me and you do not want to use powershell or have to find workarounds for the installation of various libraries and packages that only occur on windows, then this short step by step guide on how to set up your reliable linux-like coding environment might be helpful to you.
+Since using a Mac at work, I want to have a familiar and reliable Linux environment on my personal Windows computer as well. In this technical blog post, I'll be sharing a step-by-step guide on how to set up a seamless and reliable Linux-like coding environment on a Windows machine. Say goodbye to PowerShell and the hassle of installing packages and libraries specific to Windows.
 
 For me a clean and reliable coding environment involves the following three things, which is also what will be covered in this article:
 - **Windows Subsystem for Linux (WSL)** in order to make use of the power of Linux and Bash and not having to find workaround for your stuff to work on Windows
@@ -24,7 +23,7 @@ For me a clean and reliable coding environment involves the following three thin
 
 ### Installing Windows Subsystem for Linux (WSL)
 First of all we need to install the official Windows Subsystem for Linux (WSL) on your machine.
-For this simply open the Windows PowerShell as an administrator and type 
+For this simply open the Windows PowerShell as an administrator and type:
 ```bash
 wsl --install
 ```
@@ -34,12 +33,7 @@ Now that we have a linux distribution on our system, we can jump right into it a
 You should be able to open a newly installed Ubuntu-Application from the Windows start-menu. After starting it we are prompted to configure a username and a password.
 After doing so we are already all set to make use of the distro. 
 
-Remember keep your distribution and packages up to date using 
-```bash
-sudo apt update && sudo apt upgrade
-```
-
-### Using VSCode as an IDE in your WSL
+### Hooking up VSCode as an IDE to your WSL
 To get VSCode set up to work with your linux distribution we first need to [install VSCode](https://code.visualstudio.com/) on Windows (not in WSL).
 Note: When prompted to Select Additional Tasks during installation, be sure to check the Add to PATH option so you can easily open a folder in WSL using the code command.
 
@@ -111,11 +105,14 @@ python test.py
 ```
 and enjoy having successfully set up a clean development environment for yourself on your Windows machine. :)
 
-If your done working on your project remember to deactivate your virtual environment with
+If your done working on your project remember to deactivate your virtual environment:
 ```bash
 deactivate
 ```
 
+<!-- 
+Resources used: 
 https://linuxize.com/post/how-to-create-python-virtual-environments-on-ubuntu-18-04/
 https://thecodeblogger.com/2020/09/24/wsl-setup-vs-code-for-python-development/
 https://code.visualstudio.com/docs/remote/wsl
+ -->

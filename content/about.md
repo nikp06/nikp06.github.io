@@ -1,12 +1,22 @@
 +++
-title = "About"
-date = "2023-01-10"
-author = "Niklas"
+title = "Hi there, my name is Niklas!"
+date = "2023-01-14T14:55:06+01:00"
+author = "Niklas Petersen"
+authorTwitter = "killerplauze1" #do not include @
+# cover = "img/me.jpg"
+description = "The power of Linux commands on your Windows machine - this step-by-step guide will show you how to set up a reliable and clean Linux-like coding environment on your Windows machine using Windows Subsystem for Linux (WSL), VSCode as an IDE, and Python virtual environments. No more annoying workarounds and more seamless coding on Windows. Read more to learn how to make the most out of your Windows machine."
+tags = ["DevOps", "Python", "Linux"]
+keywords = ["python", "windows", "wsl", "venv", "linux", "ubuntu", "vscode"]
+showFullContent = false
+readingTime = true
+hideComments = false
 +++
+
+<!-- {{< image src="/img/me.jpg" alt="That's me!" position="center" style="border-radius: 8px;" >}} -->
 
 ## Welcome to my personal blog!
 
-My name is Niklas and I am a machine learning engineer and self-taught programmer. I have a masters degree in Human Technology in Sports and Medicine, but I soon found that using programming and software to solve problems in various fields of life to be even more in line with what I wanted to focus on and do in my working life.
+I am a machine learning engineer and self-taught programmer. I have a masters degree in Human Technology in Sports and Medicine, but I soon found that using programming and software to solve problems in various fields of life to be even more in line with what I wanted to focus on and do in my working life. 
 
 ### My Interest in Programming
 
