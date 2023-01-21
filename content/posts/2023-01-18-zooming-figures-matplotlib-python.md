@@ -14,6 +14,8 @@ hideComments = false
 
 Learn how to achieve more compelling visualizations with Python and Matplotlib using this step-by-step guide on how to zoom into your figures for better story-telling.
 
+You can also download the source code and follow the jupyter notebook in there from [here](https://github.com/nikp06/zooming-matplotlib.git).
+
 Since it was surprisingly difficult to get this zooming functionality for my plots working, I wanted to share and document my approach here for others struggling to find a clean solution.
 
 ### Getting the Data
