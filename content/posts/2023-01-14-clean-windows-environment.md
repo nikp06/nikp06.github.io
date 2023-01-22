@@ -57,25 +57,20 @@ python3 --version
 
 If you haven't done so - update your system using `sudo apt update && sudo apt upgrade` and naviagte to the folder where you are planning to store your coding projects and virtual environments.
 
-Note: for VSCode and your WSL to work faster within these folders it is recommended to create these whithin the WSL (e.g. `~/home`). VSCode will also warn you about this:
+Note: for VSCode and your WSL to work faster within these folders it is recommended to create these whithin the WSL (e.g. `~/home`). VSCode will also warn you about this.
 
 {{< image src="/img/2023-01-14-clean-windows-environment/wsl-in-vscode2.png" alt="WSL in VSCode mnt" position="center" style="border-radius: 8px;" >}}
 
 Now as an icing on the cake virtual environments allow us to establish clean, independable projects environments with their own specific packages and versions, without messing with other projects and their own dependencies. 
 
-First let's install the venv module:
+First let's install the venv module.
 ```bash
 sudo apt install python3-venv
 ```
 
-Now to create a virtual environment for a new project we just need to type the following into the terminal:
+Now let's create and activate a virtual environment for our new project, which will store all the environment dependencies that we are going to install later on in the .venv folder without polluting our machine.
 ```bash
 python3 -m venv .venv
-```
-This which will store all the environment dependencies in the .venv folder.
-
-Let's activate the virtual environment.
-```bash
 source .venv/bin/activate
 ```
 
@@ -85,27 +80,25 @@ Now let's make use of a simple example to show how we use this virtual environme
 
 We first install the numpy package with `pip install numpy` in our virtual environment.
 
-And test the installation with a simple in-line python command:
+And test the installation with a simple in-line python command.
 ```bash
 python -c "import numpy as np"
 ```
 
 If this gives us no error, then we did everything correctly.
 
-Now we can simply create a file in our project root folder (call it `test.py` or whatever) and type a simple dummy script in there:
-
+Now we can simply create a file in our project root folder (call it `test.py` or whatever) with a simple dummy script.
 ```python
 import numpy as np
 print(np.array([i for i in range(1000)]))
 ```
 
-Run this program ...
+Run this program and enjoy having successfully set up a clean development environment for yourself on your Windows machine.
 ```bash
 python test.py
 ```
-and enjoy having successfully set up a clean development environment for yourself on your Windows machine. :)
 
-If your done working on your project remember to deactivate your virtual environment:
+If your done working on your project remember to deactivate your virtual environment.
 ```bash
 deactivate
 ```

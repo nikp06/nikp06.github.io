@@ -4,7 +4,7 @@ date = "2023-01-18T17:30:06+01:00"
 author = "Niklas Petersen"
 authorTwitter = "killerplauze1" #do not include @
 cover = "img/2023-01-18-zooming-figures-matplotlib-python/cover.png"
-description = ""
+description = "Learn how to achieve more compelling visualizations with Python and Matplotlib using this step-by-step guide on how to zoom into your figures for better story-telling. Since it was surprisingly difficult to get the zoom working, I wanted to share and document my approach in this tutorial."
 tags = ["Python", "Visualizations", "Data Analysis"]
 keywords = ["python", "matplotlib", "seaborn", "visualization", "zoom", "zooming", "figures"]
 showFullContent = false
@@ -12,11 +12,9 @@ readingTime = true
 hideComments = false
 +++
 
-Learn how to achieve more compelling visualizations with Python and Matplotlib using this step-by-step guide on how to zoom into your figures for better story-telling.
+This step-by-step tutorial will showcase an example of calculating and plotting population density in Germany and walk you through the steps you need to carry out to achieve a nice zoom into your matplotlib figure.
 
 You can also download the source code and follow the jupyter notebook in there from [here](https://github.com/nikp06/zooming-matplotlib.git).
-
-Since it was surprisingly difficult to get this zooming functionality for my plots working, I wanted to share and document my approach here for others struggling to find a clean solution.
 
 ### Getting the Data
 First of all let's get ourselves a nice dataset and plot it, which will illustrates how valuable zooming into an otherwise chaotic plot can be.
@@ -171,7 +169,6 @@ axins.axes.yaxis.set_visible(False)
 
 fig.savefig(f"output.png", pad_inches=0, dpi=600, transparent=False) # change transparency to your liking
 ```
+{{< image src="/img/2023-01-18-zooming-figures-matplotlib-python/output.png" alt="WSL in VSCode" position="center" style="border-radius: 8px;" >}}
 
 And with that we have created ourselves a nice and compelling plot by integrating a zoomed frame into our figure. I hope this helped!
-
-{{< image src="/img/2023-01-18-zooming-figures-matplotlib-python/output.png" alt="WSL in VSCode" position="center" style="border-radius: 8px;" >}}
