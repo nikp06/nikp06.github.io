@@ -53,6 +53,9 @@ disableHugoGeneratorInject = false
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
 
+  # Google Analytics 4
+  googleAnalyticsID = "G-QF82QQD9DC"
+
   # Subtitle for home
   homeSubtitle = "A blog about my coding adventures"
 
