@@ -1,10 +1,10 @@
 +++
-title = "Creating AWS Resources using Python CDK as an Infrastructure as Code Framework"
+title = "Building a Step Function with Error Handling in AWS with Python CDK"
 date = "2023-03-10T20:33:14+01:00"
 author = "Niklas Petersen"
 authorTwitter = "killerplauze1" #do not include @
 cover = ""
-description = ""
+description = "Learn how to automate cloud infrastructure through code using the AWS Cloud Development Kit (CDK) and Python. In this tutorial, you'll create and deploy several AWS resources, including a step function with error handling, an S3 bucket, an EventBridge trigger, an SNS topic and a Lambda function for a simple and robust workflow. This infrastructure-as-code setup can be a game-changer for small and complex use cases alike."
 tags = ["CDK", "IaC", "Python", "DevOps", "MLOps"]
 keywords = ["CDK", "IaC", "Python", "DevOps", "MLOps", "Infrastructure as Code", "AWS"]
 showFullContent = false
@@ -12,9 +12,17 @@ readingTime = true
 hideComments = false
 +++
 
-The automation of cloud infrastructure through code (also called Infrastructure as Code or IaC) can be a real game changer for your use cases, however small and simple they might be. IaC let's you write code to define and manage your infrastructure, version control it, and deploy it as needed in a robust and repeatable way. One of the popular IaC frameworks is the AWS Cloud Development Kit (CDK), which allows developers to define infrastructure using familiar programming languages such as Python, TypeScript, and Java.
+The automation of cloud infrastructure through code (also called Infrastructure as Code or IaC) can be a real game-changer for your use cases, however small and simple they might be. IaC let's you write code to define and manage your infrastructure, version control it, and deploy it as needed in a robust and repeatable way. One of the popular IaC frameworks is the AWS Cloud Development Kit (CDK), which allows developers to define infrastructure using familiar programming languages such as Python, TypeScript, and Java.
 
-In this blog post, I will show you how to create AWS resources using Python CDK as an IaC framework. I will use CDK to define a simple workflow that demonstrates the creation of several AWS resources, including an S3 bucket, an EventBridge trigger, an SNS topic, a Lambda function, and a Step Function. The resources are created to perform the following tasks: when a file with a .txt extension is uploaded to an S3 bucket, a Step Function execution is triggered, which invokes a Lambda function. This Lambda function simply throws an error to demonstrate error handling. If the Lambda function fails, the step function handles a post to our created topic, which is subscribed to our email address, where we receive the error message.
+In this blog post, I will show you how to create AWS resources using Python CDK as an IaC framework. I will use CDK to define a simple workflow that demonstrates the creation of several AWS resources:
+- An S3 bucket with an event trigger
+- A Step Function that will be triggered by the S3 bucket
+- An SNS topic for error notifications
+- A Lambda function that will fail (for the sake of the example)
+
+The resources are created to perform the following tasks: when a file with a .txt extension is uploaded to an S3 bucket, a Step Function execution is triggered, which invokes a Lambda function. This Lambda function simply throws an error to demonstrate error handling. If the Lambda function fails, the step function handles a post to our created topic, which is subscribed to our email address, where we receive the error message.
+
+<!-- Image of the tech stack and the step function -->
 
 This kind set up is a great starting point to build more complex use cases and it has proven to be super useful and effective several times for me already. Maybe it helps you too!
 
@@ -39,18 +47,28 @@ Let's get started.
 <!-- ### What is AWS CDK?
 AWS Cloud Development Kit (CDK) is an open-source software development framework to define cloud infrastructure in code and provision it through AWS CloudFormation. With AWS CDK, you can define your cloud resources using familiar programming languages such as TypeScript, Python, and Java. AWS CDK provisions the infrastructure through CloudFormation, so you can use all the CloudFormation features to manage your infrastructure, including creating, updating, and deleting stacks. -->
 
-## Defining the AWS Resources with Python CDK
+## Project Overview
 
 In this tutorial, we will define our AWS resources, which we will later deploy, in the `aws-stack.py` file, which is located in the `root/aws` directory (the file and foldernames could of course be different for your project).
 
-Our AWS resources will include:
+```bash
+.
+├── README.md
+├── app.py
+├── aws
+│   ├── __init__.py
+│   └── aws_stack.py
+├── cdk.json
+├── lambda
+│   └── test_failure.py
+├── requirements-dev.txt
+├── requirements.txt
+└── source.bat
+```
 
-- An S3 bucket with an event trigger
-- A Step Function that will be triggered by the S3 bucket
-- An SNS topic for error notifications
-- A Lambda function that will fail (for the sake of example)
+## Defining the AWS Resources with Python CDK
 
-First, we import the necessary modules:
+To define our resources, we first need to import the necessary modules in the `aws-stack.py` file:
 
 ```python
 from aws_cdk import (
@@ -69,7 +87,7 @@ from aws_cdk import (
 from constructs import Construct
 ```
 
-Next, we define our CdkStack class:
+Next, we define our CdkStack class in the same file as before:
 
 ```python
 class CdkStack(Stack):
@@ -79,7 +97,7 @@ class CdkStack(Stack):
 
 ### Configuring the S3 Bucket with Trigger
 
-We will create an S3 bucket with an event trigger that will trigger a Step Function execution when a file with the .txt extension is uploaded to the bucket.
+In our CdkStack class we will define and create an S3 bucket with an event trigger that will trigger a Step Function execution when a file with the `.txt`-extension is uploaded to the bucket.
 
 ```python
 # defining the s3 bucket
@@ -143,7 +161,7 @@ def lambda_handler(event, context):
 
 ### Configuring SNS for Error Notification
 
-We also want to have a mechanism in place for handling *unforeseen* errors, that might occur during the life time of our step function and we do not always want to be looking at our AWS console all the time. It's much more conventient to receive a message (e.g. an email) IF something goes wrong. For this we create an sns topic and add an email subscription with our own address which is supposed to receive the notifications.
+We also want to have a mechanism in place for handling *unforeseen* errors, that might occur during the life time of our step function and we do not always want to be looking at our AWS console all the time. It's much more convenient to receive a message (e.g. an email) IF something goes wrong. For this we create an sns topic and add an email subscription with our own address which is supposed to receive the notifications.
 ```python
 # an sns topic where failures messages from lambda are posted to
 slack_topic = sns.Topic(
