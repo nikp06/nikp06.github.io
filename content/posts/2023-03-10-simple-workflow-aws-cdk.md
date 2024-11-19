@@ -2,7 +2,6 @@
 title = "Building a Step Function with Error Handling in AWS with Python CDK"
 date = "2023-03-10T20:33:14+01:00"
 author = "Niklas Petersen"
-authorTwitter = "killerplauze1" #do not include @
 cover = "img/2023-03-10-simple-workflow-aws-cdk/cover.png"
 description = "Learn how to automate cloud infrastructure through code using the AWS Cloud Development Kit (CDK) and Python. In this tutorial, you'll create and deploy several AWS resources, including a step function with error handling, an S3 bucket, an EventBridge trigger, an SNS topic and a Lambda function for a simple and robust workflow. This infrastructure-as-code setup can be a game-changer for small and complex use cases alike."
 tags = ["CDK", "IaC", "Python", "DevOps", "MLOps"]

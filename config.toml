@@ -57,7 +57,7 @@ disableHugoGeneratorInject = false
   googleAnalyticsID = "G-QF82QQD9DC"
 
   # Subtitle for home
-  homeSubtitle = "A blog about my coding adventures"
+  homeSubtitle = "I'm a Machine Learning Engineer based in Cologne, Germany."
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -71,8 +71,8 @@ disableHugoGeneratorInject = false
   enableSharingButtons = true
 
   # Metadata mostly used in document's head
-  description = "My new homepage or blog"
-  keywords = "homepage, blog"
+  description = "My personal website as a ML-Engineer based in Cologne, Germany"
+  keywords = "homepage, blog, portfolio"
   images = [""]
 
   # Set a background for the homepage
@@ -127,8 +127,9 @@ disableHugoGeneratorInject = false
     theme = "#1b1c1d"
 
   [params.logo]
-    logoMark     = ">"
-    logoText     = "$ cd /home"
+    # logoMark can also be > and logoText $ cd /home
+    logoMark     = "~"
+    logoText     = "% cd /home"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
@@ -150,15 +151,15 @@ disableHugoGeneratorInject = false
 
   # Uncomment this if you want a portrait on your start page
   #
-  # [params.portrait]
-  #   path     = "/img/IMG_2932.png"
-  #   alt      = "Portrait"
-  #   maxWidth = "50px"
+  [params.portrait]
+    path     = "/img/me.jpg"
+    alt      = "Me"
+    maxWidth = "100px"
 
   # Social icons
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/killerplauze1"
+  # [[params.social]]
+  #   name = "twitter"
+  #   url  = "https://twitter.com/killerplauze1"
 
   # [[params.social]]
   #   name = "email"
@@ -175,17 +176,17 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "linkedin"
-    url  = "https://www.linkedin.com/in/niklas-petersen-41746416a/"
+    url  = "https://www.linkedin.com/in/nikp06/"
 
   [[params.social]]
     name = "youtube"
-    url  = "https://www.youtube.com/channel/UCV3IJuY11hfmjDomu6rEWTg"
+    url  = "https://www.youtube.com/@nikp06"
 
 [languages]
   [languages.en]
-    title = "My ML Jorney"
-    subtitle = "A place for me to share and document my coding adventures"
-    keywords = "ML, DE, Python"
+    title = "Hi, I'm Niklas!"
+    subtitle = "I'm a Freelance Machine Learning Engineer and this is my personal website"
+    keywords = "ML, AI, DE, Python"
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
@@ -230,11 +231,10 @@ disableHugoGeneratorInject = false
       identifier = "posts"
       name       = "Posts"
       url        = "posts/"
-#     [[menu.main]]
-#       identifier = "showcase"
-#       name       = "Showcase"
-#       url        = "showcase/"
-
+    # [[menu.main]]
+    #   identifier = "projects"
+    #   name       = "Projects"
+    #   url        = "projects/"
 
 # [privacy]
 #   [privacy.disqus]
