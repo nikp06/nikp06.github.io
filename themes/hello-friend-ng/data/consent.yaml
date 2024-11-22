@@ -1,5 +1,5 @@
 items:
   - title: Google Anaytics (functional)
-    description: This code gives me insight into the number of people that visit my website, where they are from and what they are clicking on. I follow the guidelines of the German Government, which describe how to use Google Analytics without requiring explicit consent.
+    description: This code gives me insight into the number of people that visit my website, where they are from and what they are clicking on.
     is_functional: true
-    script_file: analytics-gtag.html
+    script_file: ga.js
