@@ -1,5 +1,0 @@
-items:
-  - title: Google Anaytics (functional)
-    description: This code gives me insight into the number of people that visit my website, where they are from and what they are clicking on.
-    is_functional: true
-    script_file: ga.js
