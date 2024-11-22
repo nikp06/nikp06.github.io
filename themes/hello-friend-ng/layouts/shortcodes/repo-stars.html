@@ -1,0 +1,8 @@
+{{ $repo := .Get "repo" }}
+{{ $data := getJSON (printf "https://api.github.com/repos/%s" $repo) }}
+{{ if $data }}
+  {{$starsvg := resources.GetMatch "star.svg" | fingerprint}}
+  <img src="{{$starsvg.RelPermalink}}" style="height: 1em; vertical-align: text-top;"> {{$data.stargazers_count}}
+{{ else }}
+  <p>Failed to fetch repository data for {{ $repo }}.</p>
+{{ end }}
