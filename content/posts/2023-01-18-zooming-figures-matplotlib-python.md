@@ -3,6 +3,7 @@ title = "Better Visualizations with Python - Zooming into Figures with Matplotli
 date = "2023-01-18T17:30:06+01:00"
 author = "Niklas Petersen"
 cover = "img/2023-01-18-zooming-figures-matplotlib-python/cover.png"
+type = "post"
 description = "Learn how to achieve more compelling visualizations with Python and Matplotlib using this step-by-step guide on how to zoom into your figures for better story-telling. Since it was surprisingly difficult to get the zoom working, I wanted to share and document my approach in this tutorial."
 tags = ["Python", "Visualizations", "Data Analysis"]
 keywords = ["python", "matplotlib", "seaborn", "visualization", "zoom", "zooming", "figures"]

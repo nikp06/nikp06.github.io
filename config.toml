@@ -231,10 +231,10 @@ disableHugoGeneratorInject = false
       identifier = "posts"
       name       = "Posts"
       url        = "posts/"
-    # [[menu.main]]
-    #   identifier = "projects"
-    #   name       = "Projects"
-    #   url        = "projects/"
+    [[menu.main]]
+      identifier = "projects"
+      name       = "Projects"
+      url        = "projects/"
 
 # [privacy]
 #   [privacy.disqus]
