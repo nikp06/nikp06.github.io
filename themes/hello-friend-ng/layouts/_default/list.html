@@ -17,9 +17,9 @@
                                 {{ if eq .Params.Type "project" }}
                                 <!-- This snippet is for aligning Title and Image next to each other. -->
                                 <div style="display: flex; align-items: center;">
-                                    <a href="{{ .Permalink }}" style="text-decoration: underline; width: 600px;">{{ .Title }}</a>
+                                    <a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}" style="text-decoration: underline; width: 600px;">{{ .Title }}</a>
                                     {{ if .Params.Cover }}
-                                        <a href="{{ .Permalink }}"><img src="{{ printf "/%s" .Params.Cover }}" alt="{{ .Title }}" style="width: 700px; height: auto; margin-left: 10px; vertical-align: middle;"></a>
+                                        <a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}"><img src="{{ printf "/%s" .Params.Cover }}" alt="{{ .Title }}" style="width: 700px; height: auto; margin-left: 10px; vertical-align: middle;"></a>
                                     {{ end }}
                                 </div>
                                 
@@ -29,10 +29,10 @@
                                         <img src="{{ printf "/%s" .Params.Cover }}" alt="{{ .Title }}" style="width: 250px; height: auto; margin-top: 12px; vertical-align: middle;">
                                     </a> -->
                                 {{ end }}
-                                <a href="{{.Permalink}}">
+                                <a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}">
                                     <span class="post-title">
                                         {{ if eq .Params.Type "project" }}
-                                            {{ .Description }} <a href="{{ .Permalink }}" style="text-decoration: underline;">mehr erfahren</a>
+                                            {{ .Description }} <a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}" style="text-decoration: underline;">read more</a>
                                         {{ else }}
                                             {{ .Title }}
                                         {{ end }}

@@ -1,5 +1,5 @@
 +++
-title = "Projekt Contextual/Cookieless Targeting im Online-Marketing"
+title = "Contextual/Cookieless Targeting - Online Marketing"
 date = "2023-04-30"
 author = "Niklas Petersen"
 # cover = "img/project-cookieless-targeting/me.jpg"

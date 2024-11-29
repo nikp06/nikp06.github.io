@@ -110,7 +110,7 @@ disableHugoGeneratorInject = false
   #
   [params.footer]
     trademark = true
-    rss = false
+    rss = true
     copyright = true
     author = false
 
@@ -121,10 +121,10 @@ disableHugoGeneratorInject = false
 
   # Colors for favicons
   #
-  [params.favicon.color]
-    mask = "#1b1c1d"
-    msapplication = "#1b1c1d"
-    theme = "#1b1c1d"
+  # [params.favicon.color]
+  #   mask = "#1b1c1d"
+  #   msapplication = "#1b1c1d"
+  #   theme = "#1b1c1d"
 
   [params.logo]
     # logoMark can also be > and logoText $ cd /home

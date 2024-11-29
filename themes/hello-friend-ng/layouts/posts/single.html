@@ -27,7 +27,7 @@
       {{ end }}
 
       {{ if .Params.Cover }}
-        <figure class="post-cover">
+        <figure class="post-cover" >
           <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title }}" />
           
           {{ if .Params.CoverCaption }}
