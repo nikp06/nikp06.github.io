@@ -1,0 +1,39 @@
+{{ define "main" }}
+    {{ $paginator := .Paginate .Data.Pages }}
+    
+    <main class="posts">
+        <h1>{{ .Title }}</h1>
+
+        {{ if .Content }}
+            <div class="content">{{ .Content }}</div>
+        {{ end }}
+
+        {{ range $paginator.Pages.GroupByDate "2006" }}
+            <div class="posts-group">
+                <div class="post-year">{{ .Key }}</div>
+                <ul class="posts-list">
+                    {{ range .Pages }}
+                            <li class="post-item">
+                                <div style="display: flex; align-items: center;">
+                                    <a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}" style="text-decoration: underline; width: 600px;">
+                                        {{ .Title }}
+                                    </a>
+                                    {{ if .Params.Cover }}
+                                        <a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}">
+                                            <img src="{{ printf "/%s" .Params.Cover }}" alt="{{ .Title }}" style="width: 700px; height: auto; margin-left: 10px; vertical-align: middle;">
+                                        </a>
+                                    {{ end }}
+                                </div>
+                                <a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}">
+                                    <span class="post-title">
+                                        {{ .Description }} <a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}" style="text-decoration: underline;">read more</a>
+                                    </span>
+                                </a>
+                            </li>
+                    {{ end }}
+                </ul>
+            </div>
+        {{ end }}
+    {{ partial "pagination-list.html" . }}
+    </main>
+{{ end }}

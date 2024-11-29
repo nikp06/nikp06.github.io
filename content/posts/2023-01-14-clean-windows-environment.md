@@ -3,13 +3,14 @@ title = "WSL, VSCode and Venv - a Guide to a clean and reliable Coding Environme
 date = "2023-01-14T14:55:06+01:00"
 author = "Niklas Petersen"
 cover = "img/2023-01-14-clean-windows-environment/cover.png"
-type = "post"
+contenttype = "post"
 description = "The power of Linux commands on your Windows machine - this step-by-step guide will show you how to set up a reliable and clean Linux-like coding environment on your Windows machine using Windows Subsystem for Linux (WSL), VSCode as an IDE, and Python virtual environments. No more annoying workarounds and more seamless coding on Windows. Read more to learn how to make the most out of your Windows machine."
 tags = ["DevOps", "Python", "Linux", "Productivity"]
 keywords = ["python", "windows", "wsl", "venv", "linux", "ubuntu", "vscode"]
 showFullContent = false
 readingTime = true
 hideComments = false
+toc = true
 +++
 
 Do you feel limited by using a Windows machine for your development work?

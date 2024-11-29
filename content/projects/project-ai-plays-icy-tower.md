@@ -1,9 +1,9 @@
 +++
 title = "Training Neural Networks to play Icy Tower using Reinforcement Learning"
-date = "2021-07-13"
+date = "2021-07-13T10:50:45+01:00"
 author = "Niklas Petersen"
 cover = "img/project-ai-plays-icy-tower/training.gif"
-type = "project"
+contenttype = "project"
 # link = "/posts/2023/03/building-a-step-function-with-error-handling-in-aws-with-terraform/"
 description = "Ein Modell wurde trainiert, das Spiel Icy Tower zu spielen. Dafür wurde ein genetischer Algorithmus aus dem Bereich des selbstverstärkenden Lernens (Reinforcement Learning) verwendet, welcher iterativ über Neuro-Evolution neuronale Netze entwickelt. Zusätzlich wurde das Spiel in Python möglichst originalgetreu nachprogrammiert."
 tags = ["Reinforcement Learning", "Deep Learning", "Genetic Algorithm", "Real-Time", "Streaming", "Visualization", "Python", "Neuro-Evolution"]

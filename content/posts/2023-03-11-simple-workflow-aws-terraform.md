@@ -3,13 +3,14 @@ title = "Building a Step Function with Error Handling in AWS with Terraform"
 date = "2023-03-11T10:50:45+01:00"
 author = "Niklas Petersen"
 cover = "img/2023-03-11-simple-workflow-aws-terraform/cover.png"
-type = "post"
+contenttype = "post"
 description = "Learn how to automate cloud infrastructure through code using Terraform and HCL. In this tutorial, you'll create and deploy several AWS resources, including a step function with error handling, an S3 bucket, an EventBridge trigger, an SNS topic and a Lambda function for a simple and robust workflow. This infrastructure-as-code setup can be a game-changer for small and complex use cases alike."
 tags = ["Terraform", "IaC", "HCL", "DevOps", "MLOps"]
 keywords = ["Terraform", "IaC", "HCL", "DevOps", "MLOps", "Infrastructure as Code", "AWS"]
 showFullContent = false
 readingTime = true
 hideComments = false
+toc = true
 +++
 
 The automation of cloud infrastructure through code (also called Infrastructure as Code or IaC) can be a real game-changer for your use cases, however small and simple they might be. IaC let's you write code to define and manage your infrastructure, version control it, and deploy it as needed in a robust and repeatable way. One popular IaC frameworks is Terraform, which is cloud-agnostic and allows developers to define infrastructure for different cloud providers like Amazon Web Services (AWS), Microsoft Azure and Google Cloud Platform (GCP).
