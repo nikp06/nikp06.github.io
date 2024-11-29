@@ -42,6 +42,9 @@ disableHugoGeneratorInject = false
 [blackfriday]
   hrefTargetBlank = true
 
+[frontmatter]
+  format = "toml"
+
 [taxonomies]
   tag      = "tags"
   category = "categories"

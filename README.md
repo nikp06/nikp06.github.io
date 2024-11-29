@@ -1,6 +1,8 @@
 # Add content
+The following commands are using the archetypes set in themes/hello-friend-ng/archetypes:
 ```
-hugo new posts/my-first-post.md
+hugo new posts/test.md
+hugo new projects/test.md
 ```
 
 # To view site on localhost
