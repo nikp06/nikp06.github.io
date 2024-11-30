@@ -1,5 +1,5 @@
 +++
-title = "Transcription and Classification of Customer Calls for German Mobile Provider (+6 mio. customers)"
+title = "From Calls to Insights: Using NLP and LLMs to Understand Customer Needs at Scale"
 date = "2024-04-30"
 author = "Niklas Petersen"
 # cover = "img/project-call-analysis/me.jpg"
