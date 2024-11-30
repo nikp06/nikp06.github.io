@@ -22,6 +22,10 @@
                                         <a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}">
                                             <img src="{{ printf "/%s" .Params.Cover }}" alt="{{ .Title }}" style="width: 700px; height: auto; margin-left: 10px; vertical-align: middle;">
                                         </a>
+                                    {{ else if .Params.Coversmall }}
+                                        <a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}">
+                                            <img src="{{ printf "/%s" .Params.Coversmall }}" alt="{{ .Title }}" style="width: 700px; height: auto; margin-left: 10px; vertical-align: middle;">
+                                        </a>
                                     {{ end }}
                                 </div>
                                 <a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}">

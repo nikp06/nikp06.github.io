@@ -1,3 +1,7 @@
+# Requirements
+Hugo version: 0.102.3
+Use the extended version in order to be able to rebuild the site and have changes in scss-files take effect.
+
 # Add content
 The following commands are using the archetypes set in themes/hello-friend-ng/archetypes:
 ```
@@ -22,6 +26,11 @@ youtube
 
 twitter
 `{{< twitter user="johanpeitz" id="1412823539875516421" >}}`
+
+# Cover Images
+For smaller cover images, that are not 1200x630 (like my other's in blog posts), use parameter "coversmall" instead of "cover".
+When the coversmall parameter is used, the html (single and also list for projects) makes use of a different css class (post-coversmall instead of post-cover).
+This class removes the border radius and the alignment to the left outside the containers.
 
 
 # Change HTML on the theme level

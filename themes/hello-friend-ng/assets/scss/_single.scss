@@ -53,6 +53,18 @@
     }
   }
 
+  &-coversmall {
+    border-radius: 0px;
+    margin: 40px auto;
+    width: $max-width;
+    max-width: $max-width;
+    overflow: hidden;
+    @media #{$media-size-tablet} {
+      margin: 20px 0;
+      width: 100%;
+    }
+  }
+
   &-excerpt {
     color: grey;
     font-style: italic;
