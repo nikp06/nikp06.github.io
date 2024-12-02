@@ -11,6 +11,7 @@ showFullContent = false
 readingTime = true
 hideComments = false
 toc = true
+postinfo = true
 +++
 
 The automation of cloud infrastructure through code (also called Infrastructure as Code or IaC) can be a real game-changer for your use cases, however small and simple they might be. IaC let's you write code to define and manage your infrastructure, version control it, and deploy it as needed in a robust and repeatable way. One of the popular IaC frameworks is the AWS Cloud Development Kit (CDK), which allows developers to define infrastructure using familiar programming languages such as Python, TypeScript, and Java.

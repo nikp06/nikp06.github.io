@@ -244,3 +244,27 @@
     margin-right: 8px;
   }
 }
+
+
+
+.form-container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+.form-container input, 
+.form-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}

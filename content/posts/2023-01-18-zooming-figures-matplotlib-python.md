@@ -11,6 +11,7 @@ showFullContent = false
 readingTime = true
 hideComments = false
 toc = true
+postinfo = true
 +++
 
 This step-by-step tutorial will showcase an example of calculating and plotting population density in Germany and walk you through the steps you need to carry out to achieve a nice zoom into your matplotlib figure.

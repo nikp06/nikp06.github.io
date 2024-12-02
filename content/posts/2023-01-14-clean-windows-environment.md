@@ -11,6 +11,7 @@ showFullContent = false
 readingTime = true
 hideComments = false
 toc = true
+postinfo = true
 +++
 
 Do you feel limited by using a Windows machine for your development work?

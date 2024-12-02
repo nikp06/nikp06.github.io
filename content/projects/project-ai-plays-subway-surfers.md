@@ -12,6 +12,7 @@ showFullContent = false
 readingTime = true
 hideComments = false
 toc = true
+postinfo = true
 +++
 
 ## Introduction

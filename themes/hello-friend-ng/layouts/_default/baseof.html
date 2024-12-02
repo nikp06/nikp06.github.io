@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language }}">
     <head>
-        {{ if and (hugo.IsProduction) (.Site.Params.googleAnalyticsID) }}
-        {{ partial "analytics-gtag.html" . }}
-        {{ end }}
         {{ partial "head.html" . }}
     </head>
 
@@ -24,5 +21,9 @@
         </div>
 
         {{ partial "javascript.html" . }}
+        {{ if (.Site.Params.googleAnalyticsID) }}
+            {{ partial "consent.html" . }}
+        {{ end }}
+        
     </body>
 </html>

@@ -10,7 +10,10 @@ keywords = ["IaC", "Python", "DevOps", "MLOps", "GenAI", "LLM", "Transformer", "
 showFullContent = false
 readingTime = true
 hideComments = false
+postinfo = true
 +++
 
 Due to confidality obligations further details about this project cannot be disclosed.
 For a reference letter detailing my contributions to this company, please feel free to reach out.
+
+[Contact]({{% relref "contact" %}})

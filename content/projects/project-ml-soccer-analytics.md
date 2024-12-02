@@ -11,6 +11,7 @@ keywords = ["Football", "Soccer", "Deep Learning", "Data Augmentation", "Feature
 showFullContent = false
 readingTime = true
 hideComments = false
+postinfo = true
 +++
 
 To be continued...

@@ -71,7 +71,7 @@ disableHugoGeneratorInject = false
   # generate the buttons here: https://sharingbuttons.io
   # and add them into your own `layouts/partials/sharing-buttons.html`
   #
-  enableSharingButtons = true
+  enableSharingButtons = false
 
   # Metadata mostly used in document's head
   description = "My personal website as a ML-Engineer based in Cologne, Germany"
@@ -208,7 +208,7 @@ disableHugoGeneratorInject = false
   #   title = "Meine ML Reise"
   #   subtitle = "Here I showcase and write about dinge such as .."
   #   keywords = "ML, DE, Python"
-  #   weight    = 2
+  #   weight    = 1
   #   copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   #   readOtherPosts = "Read other posts"
 
@@ -229,25 +229,40 @@ disableHugoGeneratorInject = false
       identifier = "about"
       name       = "About"
       url        = "about/"
+      weight = 1
     [[menu.main]]
       identifier = "posts"
-      name       = "Posts"
+      name       = "Blog"
       url        = "posts/"
+      weight = 3
     [[menu.main]]
       identifier = "projects"
       name       = "Projects"
       url        = "projects/"
+      weight = 2
+    [[menu.main]]
+      identifier = "contact"
+      name       = "Contact"
+      url        = "contact/"
+      weight = 4
 
-# [privacy]
-#   [privacy.disqus]
-#     disable = true
-#   [privacy.googleAnalytics]
-#     disable = true
-#   [privacy.instagram]
-#     disable = true
-#   [privacy.twitter]
-#     disable = true
-#   [privacy.vimeo]
-#     disable = true
-#   [privacy.youtube]
-#     disable = true
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    disable = false
+    respectDoNotTrack = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = true
+  [privacy.vimeo]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
