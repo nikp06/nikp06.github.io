@@ -5,6 +5,6 @@
   
     // Initialize Google Analytics
     gtag('js', new Date());
-    gtag('config', '{{ .Site.Params.googleAnalyticsID }}'); // Replace with your actual Google Analytics ID
+    gtag('config', 'G-QF82QQD9DC'); // Replace with your actual Google Analytics ID
   })();
   
