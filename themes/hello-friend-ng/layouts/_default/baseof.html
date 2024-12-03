@@ -21,7 +21,7 @@
         </div>
 
         {{ partial "javascript.html" . }}
-        {{ if (.Site.Params.googleAnalyticsID) }}
+        {{ if and (hugo.IsProduction) (.Site.Params.googleAnalyticsID) }}
             {{ partial "consent.html" . }}
         {{ end }}
         
