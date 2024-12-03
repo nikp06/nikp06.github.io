@@ -12,9 +12,9 @@ Liebigstr. 155\
 50823 Köln
 
 ### Kontakt
-Telefon: +49 (0) 123 44 55 66\
+<!-- Telefon: +49 (0) 123 44 55 66\ -->
 <!-- Telefax: +49 (0) 123 44 55 99\ -->
-E-Mail: nikpetersen06@gmail.com
+E-Mail: contact@nikpetersen.com
 
 <!-- ### Umsatzsteuer-ID
 Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:\

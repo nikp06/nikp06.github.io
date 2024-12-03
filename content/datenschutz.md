@@ -76,8 +76,8 @@ Niklas Petersen\
 Liebigstr. 155\
 50823 Köln
 
-Telefon: +49 (0) 123 44 55 66\
-E-Mail: nikpetersen06@gmail.com
+<!-- Telefon: +49 (0) 123 44 55 66\ -->
+E-Mail: contact@nikpetersen.com
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
 
@@ -187,7 +187,7 @@ Um Ihnen die Funktionalität des Kontaktformulars zur Verfügung zu stellen, sen
 
 Die Datenschutzerklärung von Formspree finden Sie unter folgendem Link: https://formspree.io/legal/privacy-policy
 
-**Anstatt des Kontaktformulars können Sie uns auch direkt per E-Mail kontaktieren: nikpetersen06@gmail.com**
+**Anstatt des Kontaktformulars können Sie uns auch direkt per E-Mail kontaktieren: contact@nikpetersen.com**
 
 Quelle:
 https://www.e-recht24.de
