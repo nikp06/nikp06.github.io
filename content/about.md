@@ -1,41 +1,81 @@
 +++
-title = "Hi there, my name is Niklas!"
+title = "Hi there, I'm Niklas"
 date = "2023-01-14T14:55:06+01:00"
 author = "Niklas Petersen"
 authorTwitter = "killerplauze1" #do not include @
 # cover = "img/me.jpg"
-description = "The power of Linux commands on your Windows machine - this step-by-step guide will show you how to set up a reliable and clean Linux-like coding environment on your Windows machine using Windows Subsystem for Linux (WSL), VSCode as an IDE, and Python virtual environments. No more annoying workarounds and more seamless coding on Windows. Read more to learn how to make the most out of your Windows machine."
-tags = ["DevOps", "Python", "Linux"]
-keywords = ["python", "windows", "wsl", "venv", "linux", "ubuntu", "vscode"]
+description = "ML Engineer | NLP | LLM | GenAI | MLOps | Cloud"
+tags = ["Machine Learning", "Deep Learning", "NLP", "GenAI", "LLM", "MLOps", "Cloud"]
+keywords = ["Machine Learning", "Deep Learning", "NLP", "GenAI", "LLM", "MLOps", "Cloud"]
 showFullContent = false
+postinfo = true
 readingTime = true
 hideComments = false
+# toc = true
 +++
 
 <!-- {{< image src="/img/me.jpg" alt="That's me!" position="center" style="border-radius: 8px;" >}} -->
+{{< image src="/img/me.jpg" alt="Image description" position="center" style="width: 40%; border-radius: 8px;" >}}
 
-## Welcome to my personal blog!
+I'm a freelance **Machine Learning Engineer** based in **Cologne, Germany**, with a specialization in **Natural Language Processing (NLP)**, **Generative AI (GenAI)** / **Large Language Models (LLMs)**, and **Computer Vision**.
 
-I am a machine learning engineer and self-taught programmer. I have a masters degree in Human Technology in Sports and Medicine, but I soon found that using programming and software to solve problems in various fields of life to be even more in line with what I wanted to focus on and do in my working life. 
+Using modern **MLOps/DevOps** practices and a solid understanding of **cloud technologies** and **Infrastructure as Code (IaC)**, I develop powerful, scalable, and maintainable end-to-end solutions.
 
-### My Interest in Programming
+---
 
-I have always been fascinated with the potential of programming and AI to solve complex problems and make our lives easier. So I began to teach myself how to code and started building personal projects driven by my curiosity. These projects include writing and training AI systems that are capable of playing games (Icy Tower, Subway Surfers).
+***Go check out some of my previous [AI-driven projects]({{% relref "projects" %}}) or [get in touch]({{% relref "contact" %}}), if you'd like to collaborate!***
 
-Actually being able to transfer knowledge to personal ideas and projects really sparked my initial interest to progress in this field. Putting the stuff that I have built out there on GitHub, Reddit and YouTube resulted in getting helpful feedback and reckognition from the community, which was a big motivator for me as well.
+---
 
-The fact that I am so curious and passionate about programming to take various computer science courses, start part-time jobs that involve programming and build and document personal coding projects in my spare time, all while studying for a masters degree is what eventually helped me to land a job in machine learning, I think.
+### Here's what I do
 
-### What to Expect
-Now, I am more than happy to write code for a living and I want to use this website to (more or less randomly) document what I stumble across and learn along the way.
+I strive to collaborate on innovative cloud projects requiring solutions for NLP, LLMs, and Computer Vision challenges.
 
-I created this blog mainly for myself as a way of documenting knowledge as I tackle various programming challenges. However, if it can help anyone else along the way, that would be even better.
+To achieve my goals I ...
+- Develop and deploy models with a focus on scalability and performance.
+- Create end-to-end AI pipelines, from data preprocessing to deployment, including monitoring and dashboarding.
+- Provide collaborative support to help teams integrate machine learning solutions into their workflows.
 
-On this blog, I will be sharing my journey as I continue to learn and grow as a programmer.
-You can expect posts about:
-- Solving interesting problems with Python and Golang
-- Basic machine learning concepts
-- DevOps
-- Simple tips and tricks that make my life as a developer easier
+<!-- replace with drawio -->
 
-I hope my experiences and insights can be beneficial to you and thank you for joining me on this journey.
+### Tools & Technologies I Use
+Here’s a snapshot of the tools and technologies I frequently use:
+
+---
+
+| **Category**               | **Technologies**                                                                                                                                                          |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Languages**              | Python, Go, SQL, HTML, CSS, JavaScript                                                                                                                                      |
+| **Frameworks & Libraries** | TensorFlow, PyTorch, Keras, Spark, Hugging Face Transformers, LangChain, LlamaIndex, Haystack, OpenAI API, Scikit-learn, XGBoost, Streamlit, NLTK, Gensim, spaCy, OpenCV, FastAPI, NumPy, Pandas |
+| **Infrastructure as Code** | Terraform, AWS CDK                                                                                                                                                         |
+| **Cloud Platforms**        | AWS, Databricks                                                                                                                                                           |
+| **CI/CD**                  | GitHub Actions, GitLab CI/CD, Bitbucket Pipelines, AWS                                                                                                                     |
+| **Other Tools**            | Git, Docker, VS Code, Copilot, ChatGPT, Office                                                                                                                             |
+| **OS**                     | macOS, Windows, Linux (Ubuntu, Debian)                                                                                                                                      |
+
+---
+
+<!-- - **Languages**: Python, Go, SQL, HTML, CSS, JavaScript
+- **Frameworks & Libraries**: TensorFlow, PyTorch, Keras, Spark, Hugging Face Transformers, LangChain, LlamaIndex, Haystack, OpenAI API, Scikit-learn, XGBoost, Streamlit, NLTK, Gensim, spaCy, OpenCV, FastAPI, NumPy, Pandas
+- **Infrastructure as Code**: Terraform, AWS CDK
+- **Cloud Platforms**: AWS, Databricks
+- **CI/CD**: GitHub Actions, GitLab CI/CD, Bitbucket Pipelines, AWS
+- **Other Tools**: Git, Docker, VS Code, Copilot, ChatGPT, Office
+- **OS**: macOS, Windows, Linux (Ubuntu, Debian) -->
+
+### How I Can Help You
+Whether you’re a startup looking to leverage NLP for customer support automation or an enterprise needing a custom NLP solution to streamline your operations, I’m here to help! I take pride in delivering [high-quality solutions]({{% relref "projects" %}}) tailored to your specific needs.
+
+### Why Work With Me?
+- **Custom Solutions**: I focus on understanding your unique requirements and tailor solutions to fit your specific needs.
+- **Cutting-Edge Expertise**: As the field of machine learning evolves rapidly, I stay updated with the latest trends, tools, and technologies.
+- **Collaboration & Communication**: Clear communication is key to success. I ensure transparency and regular updates throughout the project lifecycle.
+- **Efficient & Sustainable Solutions**: I prioritize efficiency and sustainability in every project, designing solutions that optimize performance while minimizing resource consumption and maximizing long-term impact.
+
+---
+
+**Contact Me**
+- [Contact]({{% relref "contact" %}})
+- [LinkedIn](https://www.linkedin.com/in/nikp06/)  
+- [Email](mailto:contact@nikpetersen.com)  
+- [GitHub](https://github.com/nikp06)
