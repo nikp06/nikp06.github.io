@@ -13,6 +13,8 @@ hideComments = false
 postinfo = true
 +++
 
+In this project I was responsible for establishing an end-to-end pipeline for data preparation, processing, and training related to incoming customer service calls. This involved leveraging methods from natural language processing (NLP) and generative artificial intelligence (AI) to transform the underlying data into text and subsequently into results that could be analyzed by the business unit. To achieve this, machine learning models (Transformers; LLMs) were trained to predict relevant parameters concerning customer concerns and satisfaction, and these models were implemented into the processing pipeline within the AWS cloud. Through this MLOps process and the daily influx of new resulting data, valuable and previously unavailable insights into customer call behavior were provided to the business unit and customers alike.
+
 Due to confidality obligations further details about this project cannot be disclosed.
 For a reference letter detailing my contributions to this company, please feel free to reach out.
 
