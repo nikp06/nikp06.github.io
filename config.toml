@@ -1,5 +1,5 @@
 baseurl      = "https://nikp06.github.io"
-title        = "My Blog"
+title        = "Freelance Machine Learning Engineer | Scalable AI Solutions with NLP & GenAI"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
@@ -50,6 +50,11 @@ disableHugoGeneratorInject = false
   category = "categories"
   series   = "series"
 
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
@@ -76,8 +81,8 @@ disableHugoGeneratorInject = false
   enableSharingButtons = false
 
   # Metadata mostly used in document's head
-  description = "My personal website as a ML-Engineer based in Cologne, Germany"
-  keywords = "homepage, blog, portfolio"
+  description = "Custom AI solutions from Germany for your business needs. Expertise in NLP, GenAI, and scalable cloud-based machine learning pipelines. Let’s innovate-contact me!"
+  keywords = "GenAI, Machine Learning Engineer in Germany, ML Freelancer in Cologne, Deep Learning Specialist, Data Science, Cloud Developer, Natural Language Processing, Generative AI, Computer Vision, MLOps, DevOps, Custom AI Solutions, End-to-End ML Pipelines, Chatbot with RAG-Agent"
   images = [""]
 
   # Set a background for the homepage
@@ -157,7 +162,7 @@ disableHugoGeneratorInject = false
   #
   [params.portrait]
     path     = "/img/me.jpg"
-    alt      = "Me"
+    alt      = "Niklas Petersen"
     maxWidth = "100px"
 
   # Social icons
