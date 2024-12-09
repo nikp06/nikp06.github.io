@@ -50,10 +50,10 @@ disableHugoGeneratorInject = false
   category = "categories"
   series   = "series"
 
-[sitemap]
-  changefreq = "weekly"
-  filename = "sitemap.xml"
-  priority = 0.5
+# [sitemap]
+#   changefreq = "weekly"
+#   filename = "sitemap.xml"
+#   priority = 0.5
 
 [params]
   dateform        = "Jan 2, 2006"
