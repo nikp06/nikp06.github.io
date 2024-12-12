@@ -14,7 +14,7 @@ toc = true
 postinfo = true
 +++
 
-The automation of cloud infrastructure through code (also called Infrastructure as Code or IaC) can be a real game-changer for your use cases, however small and simple they might be. IaC let's you write code to define and manage your infrastructure, version control it, and deploy it as needed in a robust and repeatable way. One of the popular IaC frameworks is the AWS Cloud Development Kit (CDK), which allows developers to define infrastructure using familiar programming languages such as Python, TypeScript, and Java.
+The automation of cloud infrastructure unsing infrastructure as code (IaC) is inevitable for your use cases. It lets you define and manage your cloud resources, version control and deploy them as needed in a robust and repeatable way. One of the popular IaC frameworks is the AWS Cloud Development Kit (CDK). It allows you to define infrastructure using Python, TypeScript, and Java.
 
 In this blog post, I will show you how to create AWS resources using Python CDK as an IaC framework. I will use CDK to define a simple workflow that demonstrates the creation of several AWS resources:
 - An S3 bucket with an event trigger
@@ -26,7 +26,7 @@ The resources are created to perform the following tasks: when a file with a .tx
 
 <!-- Image of the tech stack and the step function -->
 
-This kind set up is a great starting point to build more complex use cases and it has proven to be super useful and effective several times for me already. Maybe it helps you too!
+This kind of set up is a good starting point to build more complex use cases and it has proven to be super useful and effective several times for me already. Maybe it helps you too!
 
 ## Getting Started
 
@@ -37,12 +37,12 @@ To follow along with this tutorial, you will need to have the following:
 - AWS CLI installed and configured
 - AWS CDK installed and bootstrapped in your AWS account
 
-This tutorial also assumes basic familiarity with AWS and CDK.
+This tutorial also assumes some familiarity with AWS and CDK.
 However, it should be sufficient to refresh your memory with these two resources:
 - [Getting started with CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html)
 - [Build your first CDK app](https://docs.aws.amazon.com/cdk/v2/guide/hello_world.html)
 
-Furthermore, I won't go into detail about how to set up your `app.py` file, which serves as the entry point for your CDK commands. If you want to follow along with the exact same example your can check out [my GitHub repository](https://github.com/nikp06/aws-cdk-simple-workflow).
+Furthermore, I won't go into detail about how to set up your `app.py` file, which serves as the entry point for your CDK commands. If you want to follow along with the exact same example you can check out [my GitHub repository](https://github.com/nikp06/aws-cdk-simple-workflow).
 
 Let's get started.
 
@@ -163,7 +163,7 @@ def lambda_handler(event, context):
 
 ### Configuring SNS for Error Notification
 
-We also want to have a mechanism in place for handling *unforeseen* errors, that might occur during the life time of our step function and we do not always want to be looking at our AWS console all the time. It's much more convenient to receive a message (e.g. an email) IF something goes wrong. For this we create an sns topic and add an email subscription with our own address which is supposed to receive the notifications.
+We also want to have a mechanism in place for handling *unforeseen* errors, that might occur during the life time of our step function and we do not always want to be looking at our AWS console all the time. It's much more convenient to receive a message (e.g. an email) in case something goes wrong. For this we create an sns topic and add an email subscription with our own address which is supposed to receive the notifications.
 ```python
 # an sns topic where failures messages from lambda are posted to
 slack_topic = sns.Topic(
@@ -241,4 +241,4 @@ This should trigger our step function, which will invoke our Lambda function. Si
 ## Conclusion
 In this blog post, we have seen how to use the AWS Cloud Development Kit (CDK) to create AWS resources as code using Python. We have created a simple but super effective and useful workflow that uses an S3 bucket trigger to invoke a step function, which in turn invokes a Lambda function. We have also seen how to use SNS to receive notifications in case of Lambda function failures.
 
-Using the CDK allows us to define our infrastructure as code, which provides several benefits such as version control, automated testing, and simplified deployment. By using Python, we can leverage the rich ecosystem of Python libraries and tools to build and manage our AWS infrastructure.
+I hope this post serves as a good kickstarter to you, so that you can build more complex workflows in the future.

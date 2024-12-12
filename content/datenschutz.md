@@ -76,7 +76,7 @@ Niklas Petersen\
 Liebigstr. 155\
 50823 Köln
 
-<!-- Telefon: +49 (0) 123 44 55 66\ -->
+Telefon: +49 (0) 151 1490 5991\
 E-Mail: contact@nikpetersen.com
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.

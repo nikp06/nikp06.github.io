@@ -14,8 +14,6 @@ toc = true
 postinfo = true
 +++
 
-Do you feel limited by using a Windows machine for your development work?
-
 Since using a Mac at work, I want to have a familiar and reliable Linux environment on my personal Windows computer as well. In this technical blog post, I'll be sharing a step-by-step guide on how to set up a seamless and reliable Linux-like coding environment on a Windows machine. Say goodbye to PowerShell and the hassle of installing packages and libraries specific to Windows.
 
 For me a clean and reliable coding environment involves the following three things, which is also what will be covered in this article:

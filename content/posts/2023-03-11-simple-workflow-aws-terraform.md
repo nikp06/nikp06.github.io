@@ -4,7 +4,7 @@ date = "2023-03-11T10:50:45+01:00"
 author = "Niklas Petersen"
 cover = "img/2023-03-11-simple-workflow-aws-terraform/cover.png"
 contenttype = "post"
-description = "Learn how to automate cloud infrastructure through code using Terraform and HCL. In this tutorial, you'll create and deploy several AWS resources, including a step function with error handling, an S3 bucket, an EventBridge trigger, an SNS topic and a Lambda function for a simple and robust workflow. This infrastructure-as-code setup can be a game-changer for small and complex use cases alike."
+description = "Automate cloud infrastructure with code using Terraform. This post describes how to deploy a simple but effective workflow in AWS, using only a step function that catches errors, an S3 bucket, an EventBridge, SNS and a Lambda function."
 tags = ["Terraform", "IaC", "HCL", "DevOps", "MLOps"]
 keywords = ["Terraform", "IaC", "HCL", "DevOps", "MLOps", "Infrastructure as Code", "AWS"]
 showFullContent = false
@@ -14,7 +14,7 @@ toc = true
 postinfo = true
 +++
 
-The automation of cloud infrastructure through code (also called Infrastructure as Code or IaC) can be a real game-changer for your use cases, however small and simple they might be. IaC let's you write code to define and manage your infrastructure, version control it, and deploy it as needed in a robust and repeatable way. One popular IaC frameworks is Terraform, which is cloud-agnostic and allows developers to define infrastructure for different cloud providers like Amazon Web Services (AWS), Microsoft Azure and Google Cloud Platform (GCP).
+The automation of cloud infrastructure through code (also called Infrastructure as Code or IaC) let's you define and manage cloud resources in a robust and repeatable way. One popular IaC frameworks is Terraform, which is cloud-agnostic and allows developers to define infrastructure for different cloud providers like Amazon Web Services (AWS), Microsoft Azure and Google Cloud Platform (GCP).
 
 In this blog post, I will show you how to create AWS resources using Terraform and the HashiCorp Configuration Language (HCL). I will define a simple workflow that demonstrates the creation of several AWS resources:
 - An S3 bucket with an event trigger
@@ -22,11 +22,11 @@ In this blog post, I will show you how to create AWS resources using Terraform a
 - An SNS topic for error notifications
 - A Lambda function that will fail (for the sake of the example)
 
-The resources are created to perform the following tasks: when a file with a .txt extension is uploaded to an S3 bucket, a Step Function execution is triggered, which invokes a Lambda function. This Lambda function simply throws an error to demonstrate error handling. If the Lambda function fails, the step function handles a post to our created topic, which is subscribed to our email address, where we receive the error message.
+The resources are designed to execute the following tasks: When a file with a .txt extension is uploaded to an S3 bucket, it triggers a Step Function execution that invokes a Lambda function. This Lambda function deliberately generates an error to showcase error handling. If the Lambda function fails, the Step Function manages the process by sending a notification to a predefined topic. This topic, subscribed to an email address, ensures the error message is delivered to the intended recipient.
 
 <!-- Image of the tech stack and the step function -->
 
-This kind set up is a great starting point to build more complex use cases and it has proven to be super useful and effective several times for me already. Maybe it helps you too!
+This will hopefully be a good kickstart to build more complex use cases!
 
 ## Getting Started
 
@@ -143,8 +143,9 @@ The file- and foldernames could of course be different for your project. You cou
 ## Defining the AWS Resources with Terraform
 
 ### The actual Step Function and Definition
-Let's start off this tutorial by defininig the integral part for our simple workflow - the actual step function and its definition. It is supposed to start with the invocation of a lambda function, which in case of failure is supposed to publish to an sns topic.
-Keep in mind, that with Terraform, we always need to define AWS IAM roles and policies to define the permissions of our resources (invoking a specific lambda function and publishing to a certain sns topic).
+Now, let's define the core component of our simple workflow: the Step Function. This Step Function is designed to start by invoking a Lambda function, which, in the event of a failure, will publish a message to an SNS topic.
+
+Remember, when using Terraform, it's essential to define AWS IAM roles and policies to specify the permissions required by our resources, such as invoking a particular Lambda function and publishing to a specific SNS topic.
 
 ```HCL
 # variables
@@ -373,7 +374,8 @@ resource "aws_cloudwatch_event_target" "cloudwatch_event_target" {
 
 ### A Dummy Lambda Function
 
-In this example, a lambda function that is simply raising an error is serving as a placeholder for the actual processing that could be done for your particular use case. With Terraform the following resources in a file called `lambda.tf`, that resides in the lambda module.
+In this example, a Lambda function that intentionally raises an error serves as a placeholder for the actual processing that could be implemented for your specific use case. With Terraform the following resources in a file called `lambda.tf`, that resides in the lambda module.
+
 ```HCL
 # for zipping the lambda
 data "archive_file" "python_lambda_package" {
@@ -419,7 +421,7 @@ output "lambda_arn" {
   value = aws_lambda_function.test_failure_lambda.arn
 }
 ```
-The code for the lambda function is written in Python in this example and resides in a file called `test_failure.py` in the `./modules/lambda/scripts` folder.
+The lambda function is written in Python and sits in a file called `test_failure.py` in the `./modules/lambda/scripts` folder.
 ```python
 #!/usr/bin/python3.9
 def lambda_handler(event, context):
@@ -434,7 +436,8 @@ def lambda_handler(event, context):
 
 ### Configuring SNS for Error Notification
 
-Great, almost done here. Now before we deploy, we also want to have a mechanism in place for handling *unforeseen* errors, that might occur during the life time of our step function and we do not always want to be looking at our AWS console all the time. It's much more convenient to receive a message (e.g. an email) IF something goes wrong. For this we create an sns topic and add an email subscription with our own address which is supposed to receive the notifications in a file called `sns.tf`.
+Almost there! Before deploying, it's important to set up a mechanism to handle unexpected errors that might occur during the runtime of our Step Function. Constantly monitoring the AWS console isn't practical, so it's far more convenient to receive a notification (e.g., an email) if something goes wrong. To achieve this, we'll create an SNS topic and add an email subscription with our address to receive these notifications. This setup will be defined in a file named `sns.tf`.
+
 ```HCL
 variable "email_address" {}
 
@@ -467,9 +470,9 @@ touch test.txt
 aws s3 cp test.txt s3://tf-simple-workflow-bucket
 ```
 
-This should trigger our step function, which will invoke our Lambda function. Since our Lambda function is simply throwing an error in this example, our SNS topic should receive a notification with the error message, which should be sent to the email address we specified during deployment.
+This triggers our step function and in turn invoke the Lambda function. If everthing goes right, it will throw an error. Our SNS topic should then receive a notification displaying the error message, which is forwarded to the email address we specified during deployment.
 
 ## Conclusion
-In this blog post, we have seen how to use the Terraform and HCL to create AWS resources as code. We have created a simple but super effective and useful workflow that uses an S3 bucket trigger to invoke a step function, which in turn invokes a Lambda function. We have also seen how to use SNS to receive notifications in case of Lambda function failures.
+In this blog post, we explored how to use Terraform and HCL to provision AWS resources as code. We built a straightforward yet highly effective workflow that uses an S3 bucket trigger to start a Step Function, which then invokes a Lambda function. Additionally, we demonstrated how to leverage SNS to receive notifications in the event of Lambda function failures.
 
 Using Terraform allows us to define our infrastructure as code, which provides several benefits such as version control, automated testing, and simplified deployment. Getting familiar with Terraform can be demanding with a steep learning curve, but might be useful for your purposes, as it can help you with other cloud providers like Microsoft Azure or Google Cloud Platform as well.
