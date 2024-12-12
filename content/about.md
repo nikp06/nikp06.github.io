@@ -1,5 +1,5 @@
 +++
-title = "Hi there, I'm Niklas"
+title = "About Niklas Petersen | Freelance Machine Learning Engineer"
 date = "2023-01-14T14:55:06+01:00"
 author = "Niklas Petersen"
 authorTwitter = "killerplauze1" #do not include @
