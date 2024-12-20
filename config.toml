@@ -65,8 +65,8 @@ disableHugoGeneratorInject = false
   googleAnalyticsID = "G-QF82QQD9DC"
 
   # Subtitle for home
-  homeSubtitle = "a Freelance Machine Learning Engineer based in Cologne, Germany."
-  homeSubSubtitle = "I develop <b>custom</b>, <b>powerful</b> and <b> scalable</b> ML-solutions</b>.<br>"
+  homeSubtitle = "Freelance Machine Learning Engineer based in Cologne, Germany."
+  homeSubSubtitle = "I develop <b>custom</b> and <b> scalable</b> ML-solutions</b>.<br>"
   homeTags = ["GenAI", "LLM", "Computer Vision", "DevOps", "MLOps", "Cloud", "IaC"]
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
