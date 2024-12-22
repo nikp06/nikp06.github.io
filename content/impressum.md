@@ -12,7 +12,7 @@ Liebigstr. 155\
 50823 Köln
 
 ### Kontakt
-Telefon: +49 (0) 151 1490 5991\
+Telefon: +49 (0) 151 1490 5991
 <!-- Telefax: +49 (0) 123 44 55 99\ -->
 E-Mail: contact@nikpetersen.com
 

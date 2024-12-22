@@ -25,6 +25,6 @@ What made me even more proud at the time, was that the creator of the legendary 
 {{< twitter user="johanpeitz" id="1412823539875516421" >}}
 
 
-## Breakdown
+## Coding the Game with PyGame
 Following soon..
 
