@@ -13,6 +13,7 @@ hugo new projects/test.md
 ```
 hugo server --theme hello-friend-ng
 ```
+Check your hugo version if this doesn't work!
 
 # Some Hugo shortcodes
 reference a link to another site:
