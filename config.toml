@@ -1,5 +1,5 @@
 baseurl      = "https://www.nikpetersen.com/"
-title        = "Freelance Machine Learning Engineer | Scalable AI Solutions with NLP & GenAI"
+title        = "Freelance AI & Machine Learning Engineer | Scalable AI-Systems with ML and GenAI"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
@@ -65,7 +65,7 @@ disableHugoGeneratorInject = false
   googleAnalyticsID = "G-QF82QQD9DC"
 
   # Subtitle for home
-  homeSubtitle = "Freelance Machine Learning Engineer based in Cologne, Germany."
+  homeSubtitle = "Freelance AI & Machine Learning Engineer based in Cologne, Germany."
   homeSubSubtitle = "I develop <b>custom</b> and <b> scalable</b> ML-solutions</b>.<br>"
   homeTags = ["GenAI", "LLM", "Computer Vision", "DevOps", "MLOps", "Cloud", "IaC"]
 

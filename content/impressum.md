@@ -16,16 +16,17 @@ Telefon: +49 (0) 151 1490 5991
 <!-- Telefax: +49 (0) 123 44 55 99\ -->
 E-Mail: contact@nikpetersen.com
 
-<!-- ### Umsatzsteuer-ID
+### Umsatzsteuer-ID
 Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:\
-DE999999999 -->
+DE427034420
 
-<!-- ### Angaben zur Berufshaftpflichtversicherung
+### Angaben zur Berufshaftpflichtversicherung
 **Name und Sitz des Versicherers:**\
-Beispiel Versicherung AG Musterweg 10\
-90210 Musterstadt\
+Hiscox SA\
+Bernhard-Wicki-Str. 3\
+80636 München\
 Geltungsraum der Versicherung:\
-Deutschland -->
+Weltweit
 
 ### Redaktionell verantwortlich
 Niklas Petersen\
