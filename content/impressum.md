@@ -7,9 +7,9 @@ postinfo = false
 +++
 
 Niklas Petersen\
-Machine Learning Engineer\
-Liebigstr. 155\
-50823 Köln
+AI & Machine Learning Engineer\
+Marienstr. 113\
+50825 Köln
 
 ### Kontakt
 Telefon: +49 (0) 151 1490 5991
@@ -30,8 +30,8 @@ Weltweit
 
 ### Redaktionell verantwortlich
 Niklas Petersen\
-Liebigstr. 155\
-50823 Köln
+Marienstr. 113\
+50825 Köln
 
 ### EU-Streitschlichtung
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/.\

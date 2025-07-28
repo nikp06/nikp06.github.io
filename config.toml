@@ -193,9 +193,9 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.en]
-    title = "Machine Learning Engineer (DE)"
-    subtitle = "AI Solutions | NLP, GenAI, LLM"
-    keywords = "ML, GenAI, ML Engineer in Germany, Machine Learning in Cologne, Freelance Machine Learning Engineer, Deep Learning, Data Science, Cloud Developer, Natural Language Processing, Generative AI, Computer Vision, MLOps, DevOps, Custom AI Solutions, End-to-End ML Pipelines, Chatbot with RAG-Agent"
+    title = "AI & Machine Learning Engineer (DE)"
+    subtitle = "AI Agents | NLP, GenAI, LLM"
+    keywords = "ML, GenAI, ML Engineer in Germany, AI Engineer, Machine Learning in Cologne, Freelance Machine Learning Engineer, Deep Learning, Data Science, Cloud Developer, Natural Language Processing, Generative AI, Computer Vision, MLOps, DevOps, Custom AI Solutions, End-to-End ML Pipelines, AI Agents, Chatbot with RAG-Agent"
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"

@@ -1,5 +1,5 @@
 +++
-title = "About Niklas Petersen | Freelance Machine Learning Engineer"
+title = "About Niklas Petersen | Freelance AI & Machine Learning Engineer"
 date = "2023-01-14T14:55:06+01:00"
 author = "Niklas Petersen"
 authorTwitter = "killerplauze1" #do not include @
@@ -17,7 +17,7 @@ hideComments = false
 <!-- {{< image src="/img/me.jpg" alt="That's me!" position="center" style="border-radius: 8px;" >}} -->
 {{< image src="/img/me.jpg" alt="Image description" position="center" style="width: 40%; border-radius: 8px;" >}}
 
-I'm a freelance **Machine Learning Engineer** based in **Cologne, Germany**, with a specialization in **Natural Language Processing (NLP)**, **Generative AI (GenAI)** / **Large Language Models (LLMs)**, and **Computer Vision**.
+I'm a freelance **AI & Machine Learning Engineer** based in **Cologne, Germany**, with a specialization in **multimodal AI Agents**, **Natural Language Processing (NLP)**, **Generative AI (GenAI)** / **Large Language Models (LLMs)**, and **Computer Vision**.
 
 Using modern **MLOps/DevOps** practices and a solid understanding of **cloud technologies** and **Infrastructure as Code (IaC)**, I develop powerful, scalable, and maintainable end-to-end solutions.
 
@@ -46,10 +46,11 @@ Here’s a snapshot of the tools and technologies I frequently use:
 | **Category**               | **Technologies**                                                                                                                                                          |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Languages**              | Python, Go, SQL, HTML, CSS, JavaScript                                                                                                                                      |
-| **Frameworks & Libraries** | TensorFlow, PyTorch, Keras, Spark, Hugging Face Transformers, LangChain, LlamaIndex, Haystack, OpenAI API, Scikit-learn, XGBoost, Streamlit, NLTK, Gensim, spaCy, OpenCV, FastAPI, NumPy, Pandas |
+| **Frameworks & Libraries** | TensorFlow, PyTorch, Keras, Spark, Hugging Face Transformers, LiveKit, Pipecat, LangChain, LlamaIndex, Haystack, OpenAI API, Scikit-learn, XGBoost, Streamlit, NLTK, Gensim, spaCy, OpenCV, FastAPI, NumPy, Pandas |
 | **Infrastructure as Code** | Terraform, AWS CDK                                                                                                                                                         |
-| **Cloud Platforms**        | AWS, Databricks                                                                                                                                                           |
+| **Cloud Platforms**        | AWS, Azure, Databricks                                                                                                                                                           |
 | **CI/CD**                  | GitHub Actions, GitLab CI/CD, Bitbucket Pipelines, AWS                                                                                                                     |
+| **Orchestration**                  | Airflow, Kubernetes, MLFlow                                                                                                                     |
 | **Other Tools**            | Git, Docker, VS Code, Copilot, ChatGPT, Office                                                                                                                             |
 | **OS**                     | macOS, Windows, Linux (Ubuntu, Debian)                                                                                                                                      |
 

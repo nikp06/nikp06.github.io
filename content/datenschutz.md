@@ -73,8 +73,8 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kom
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 
 Niklas Petersen\
-Liebigstr. 155\
-50823 Köln
+Marienstr. 113\
+50825 Köln
 
 Telefon: +49 (0) 151 1490 5991\
 E-Mail: contact@nikpetersen.com
