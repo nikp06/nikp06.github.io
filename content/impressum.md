@@ -7,18 +7,13 @@ postinfo = false
 +++
 
 Niklas Petersen\
-AI & Machine Learning Engineer\
-Marienstr. 113\
-50825 Köln
+AI & Machine Learning Engineer
 
 ### Kontakt
-Telefon: +49 (0) 151 1490 5991
-<!-- Telefax: +49 (0) 123 44 55 99\ -->
 E-Mail: contact@nikpetersen.com
 
-### Umsatzsteuer-ID
-Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:\
-DE427034420
+<!-- ### Umsatzsteuer-ID
+Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:\ -->
 
 ### Angaben zur Berufshaftpflichtversicherung
 **Name und Sitz des Versicherers:**\
@@ -29,9 +24,7 @@ Geltungsraum der Versicherung:\
 Weltweit
 
 ### Redaktionell verantwortlich
-Niklas Petersen\
-Marienstr. 113\
-50825 Köln
+Niklas Petersen
 
 ### EU-Streitschlichtung
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/.\

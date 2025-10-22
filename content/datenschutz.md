@@ -72,11 +72,8 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kom
 ### Hinweis zur verantwortlichen Stelle
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 
-Niklas Petersen\
-Marienstr. 113\
-50825 Köln
+Niklas Petersen
 
-Telefon: +49 (0) 151 1490 5991\
 E-Mail: contact@nikpetersen.com
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.

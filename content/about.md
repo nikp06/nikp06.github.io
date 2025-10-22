@@ -77,6 +77,6 @@ Whether you’re a startup looking to leverage NLP for customer support automati
 
 **Contact Me**
 - [Contact]({{% relref "contact" %}})
-- [LinkedIn](https://www.linkedin.com/in/nikp06/)  
 - [Email](mailto:contact@nikpetersen.com)  
 - [GitHub](https://github.com/nikp06)
+<!-- - [LinkedIn](https://www.linkedin.com/in/name/)   -->
